@@ -1,0 +1,6 @@
+{
+  "//": "MCP server configuration for this repository (VS Code reads .github/mcp.json / .vscode/mcp.json; the cloud coding agent has its own MCP box in repo Settings > Copilot > Coding agent).",
+  "//_workshop": "DISABLED FOR THE WORKSHOP. We are NOT using MCP today (company policy). This file is a reference template only. See docs/09-mcp-optional.md. `servers` is intentionally empty so nothing starts.",
+  "//_example": "To enable later, add entries under servers, e.g. { github: { type: http, url: https://api.githubcopilot.com/mcp/, headers: { Authorization: Bearer ${input:github_token} } } }",
+  "servers": {}
+}

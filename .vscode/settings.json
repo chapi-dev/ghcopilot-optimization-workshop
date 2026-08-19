@@ -1,0 +1,50 @@
+{
+  // =====================================================================
+  //  Token-friendly GitHub Copilot settings for the workshop.
+  //  These are WORKSPACE settings. Copy the relevant keys into your
+  //  User settings (settings.json) to apply them to every project.
+  //  Every setting below is documented at https://code.visualstudio.com/docs
+  // =====================================================================
+
+  // --- Custom instructions & customization files ---------------------
+  // Make Copilot read .github/copilot-instructions.md and *.instructions.md.
+  "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+  // Enable reusable prompt files (*.prompt.md).
+  "chat.promptFiles": true,
+  // Discover instructions/prompts from a parent repo (useful in monorepos).
+  "chat.useCustomizationsInParentRepositories": true,
+
+  // --- Keep responses concise = fewer output tokens ------------------
+  // Extra, always-on instruction applied to chat requests.
+  "github.copilot.chat.codeGeneration.instructions": [
+    { "text": "Be concise. Do not repeat the question or restate the plan. Answer directly, show only the changed code, and skip unnecessary preamble." }
+  ],
+  // Reuse the same concise rules when generating commit messages / PRs.
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    { "text": "Write a short imperative commit subject (<=50 chars) and a terse body only if it adds real information." }
+  ],
+  "github.copilot.chat.pullRequestDescriptionGeneration.instructions": [
+    { "text": "Summarize what changed and why in a few bullet points. No fluff." }
+  ],
+
+  // --- Agent mode & tool approvals (see docs/05) ---------------------
+  // Keep auto-approval OFF by default; approve tools deliberately.
+  // Set specific tools to true only when you trust them (see docs/05).
+  "chat.tools.autoApprove": false,
+  // Cap how many steps agent mode runs before checking in with you.
+  "chat.agent.maxRequests": 25,
+
+  // --- Smaller, cleaner diffs = fewer tokens on every request --------
+  "editor.formatOnSave": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+
+  // --- Reduce noise the model has to read ----------------------------
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.venv": true
+  }
+}

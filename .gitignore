@@ -1,0 +1,22 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+*.swp
+*.swo
+
+# Node / tooling (in case challenges add tooling)
+node_modules/
+dist/
+build/
+.venv/
+__pycache__/
+
+# Local secrets — never commit these
+.env
+.env.*
+*.local
+
+# Copilot / agent local state (keep out of version control)
+.copilot/

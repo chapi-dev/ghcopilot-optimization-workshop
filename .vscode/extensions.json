@@ -1,0 +1,22 @@
+{
+  // Recommended extensions for the GitHub Copilot Optimization Workshop.
+  // VS Code will prompt to install these when the folder is opened.
+  "recommendations": [
+    // --- Core Copilot ---
+    "github.copilot",
+    "github.copilot-chat",
+
+    // --- Evaluate & improve your customization files (instructions/prompts/skills) ---
+    "ms-vscode.vscode-chat-customizations-evaluations",
+
+    // --- Markdown authoring (this repo is docs-heavy) ---
+    "yzhang.markdown-all-in-one",
+    "davidanson.vscode-markdownlint",
+
+    // --- Editor hygiene = smaller, cleaner diffs = fewer tokens ---
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "streetsidesoftware.code-spell-checker"
+  ],
+  "unwantedRecommendations": []
+}

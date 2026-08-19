@@ -1,0 +1,6 @@
+{
+  "//": "Copy to: .github/mcp.json (or .vscode/mcp.json). REFERENCE ONLY — MCP is DISABLED for this workshop.",
+  "//_workshop": "Keep `servers` empty so nothing starts. See docs/09-mcp-optional.md before enabling anything.",
+  "//_example": "To enable later: { github: { type: http, url: https://api.githubcopilot.com/mcp/, headers: { Authorization: Bearer ${input:github_token} } } }",
+  "servers": {}
+}

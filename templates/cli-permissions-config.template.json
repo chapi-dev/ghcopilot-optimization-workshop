@@ -1,0 +1,15 @@
+{
+  "//": "Copy to: ~/.copilot/permissions-config.json. Controls which tools the Copilot CLI may run without asking (the CLI's 'auto mode').",
+  "//_safety": "Only auto-allow safe, reversible actions in git-backed repos. NEVER auto-allow destructive/irreversible commands or anything touching secrets or production. Verify the exact schema against current CLI docs.",
+  "allow": [
+    "read_file",
+    "list_files",
+    "git status",
+    "git diff"
+  ],
+  "deny": [
+    "rm -rf",
+    "git push --force",
+    "*deploy*"
+  ]
+}

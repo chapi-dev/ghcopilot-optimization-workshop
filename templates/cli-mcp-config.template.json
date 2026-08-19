@@ -1,0 +1,6 @@
+{
+  "//": "Copy to: ~/.copilot/mcp-config.json. REFERENCE ONLY — MCP is DISABLED for this workshop.",
+  "//_workshop": "Leave mcpServers empty during the workshop. This block shows the shape you'd use later. See docs/09-mcp-optional.md.",
+  "//_example": "A server entry looks like: { command: npx, args: [-y, <server-package>], env: { API_KEY: ${input:api_key} } }",
+  "mcpServers": {}
+}

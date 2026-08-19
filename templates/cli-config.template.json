@@ -1,0 +1,6 @@
+{
+  "//": "Copy to: ~/.copilot/config.json (Windows: C:\\Users\\<you>\\.copilot\\config.json). Local Copilot CLI settings. Verify keys against the current CLI docs; unknown keys may be ignored.",
+  "//_note": "Keep this minimal. Personal, machine-local settings — do not commit to a repo.",
+  "banner": "never",
+  "theme": "auto"
+}

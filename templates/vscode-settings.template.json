@@ -1,0 +1,27 @@
+{
+  "//": "Copy to: .vscode/settings.json (workspace) OR merge into your User settings.json (all projects).",
+
+  "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+  "chat.promptFiles": true,
+  "chat.useCustomizationsInParentRepositories": true,
+
+  "github.copilot.chat.codeGeneration.instructions": [
+    { "text": "Be concise. Don't restate the question or the plan. Show only changed code." }
+  ],
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    { "text": "Short imperative subject (<=50 chars); terse body only if it adds information." }
+  ],
+
+  "chat.tools.autoApprove": false,
+  "chat.agent.maxRequests": 25,
+
+  "editor.formatOnSave": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true
+  }
+}

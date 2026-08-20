@@ -1,15 +1,29 @@
 {
-  "//": "Copy to: ~/.copilot/permissions-config.json. Controls which tools the Copilot CLI may run without asking (the CLI's 'auto mode').",
-  "//_safety": "Only auto-allow safe, reversible actions in git-backed repos. NEVER auto-allow destructive/irreversible commands or anything touching secrets or production. Verify the exact schema against current CLI docs.",
-  "allow": [
-    "read_file",
-    "list_files",
-    "git status",
-    "git diff"
-  ],
-  "deny": [
-    "rm -rf",
-    "git push --force",
-    "*deploy*"
-  ]
+  "//_1": "TEMPLATE - Copy to ~/.copilot/permissions-config.json (Windows: C:/Users/<you>/.copilot/permissions-config.json).",
+  "//_2": "Controls which tools the Copilot CLI may run WITHOUT asking, PER FOLDER (the CLI's 'auto mode'). The CLI writes here when you pick 'always allow'. You can also pre-seed it.",
+  "//_3": "SCHEMA: locations -> <absolute-path> -> tool_approvals: [ approval ]. Each approval has a `kind`:",
+  "//_4": "  { kind: 'commands', commandIdentifiers: ['az','npm run',...] }  -> allow those shell commands",
+  "//_5": "  { kind: 'write' }                                             -> allow file writes/edits",
+  "//_6": "  { kind: 'mcp', serverName: '<srv>', toolName: '<tool>' }      -> allow one MCP tool (N/A this workshop)",
+  "//_7": "  { kind: 'mcp-sampling', serverName: '<srv>' }                 -> allow MCP sampling",
+  "//_8": "  { kind: 'memory' }                                           -> allow storing memories",
+  "//_safety": "Only auto-allow SAFE, REVERSIBLE actions in trusted repos. Never pre-approve destructive commands (rm, git push --force, deploys) or anything touching secrets/production. Approvals are scoped to the exact path key, so grant them narrowly.",
+
+  "locations": {
+    "C:/Users/<you>/Documents/Projects/<repo>": {
+      "tool_approvals": [
+        { "kind": "write" },
+        { "kind": "commands", "commandIdentifiers": ["git status", "git diff", "git add"] },
+        { "kind": "commands", "commandIdentifiers": ["npm ci", "npm run", "npm test"] },
+        { "kind": "commands", "commandIdentifiers": ["python", "pip install"] }
+      ]
+    },
+
+    "//_example_readonly": "A tighter, read-only-ish profile for a less-trusted repo:",
+    "C:/Users/<you>/Documents/Projects/<other-repo>": {
+      "tool_approvals": [
+        { "kind": "commands", "commandIdentifiers": ["git status", "git diff", "ls"] }
+      ]
+    }
+  }
 }

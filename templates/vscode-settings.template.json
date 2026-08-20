@@ -1,27 +1,62 @@
 {
-  "//": "Copy to: .vscode/settings.json (workspace) OR merge into your User settings.json (all projects).",
+  "//_1": "TEMPLATE - Copy to .vscode/settings.json (per-repo, committed) OR merge into your User settings.json (all projects). Windows User path: %APPDATA%/Code/User/settings.json.",
+  "//_2": "This file uses unique //_ keys as comments so it stays STRICT valid JSON. In a real .vscode/settings.json you may also use // line comments (JSONC).",
 
+  "//_customization": "Make Copilot read your instruction/prompt files.",
   "github.copilot.chat.codeGeneration.useInstructionFiles": true,
   "chat.promptFiles": true,
   "chat.useCustomizationsInParentRepositories": true,
 
+  "//_concise": "Always-on rules that keep answers short = fewer output tokens.",
   "github.copilot.chat.codeGeneration.instructions": [
-    { "text": "Be concise. Don't restate the question or the plan. Show only changed code." }
+    { "text": "Be concise. Don't restate the question or the plan. Show only changed code." },
+    { "text": "Match the existing style of the file you're editing. No apologies or filler." }
+  ],
+  "github.copilot.chat.testGeneration.instructions": [
+    { "text": "Arrange-Act-Assert, one behaviour per test, cover an edge case, no real network." }
+  ],
+  "github.copilot.chat.reviewSelection.instructions": [
+    { "text": "Report only high-confidence bugs/security/logic issues. No style nitpicks." }
   ],
   "github.copilot.chat.commitMessageGeneration.instructions": [
-    { "text": "Short imperative subject (<=50 chars); terse body only if it adds information." }
+    { "text": "Conventional Commits. Imperative subject <=50 chars; terse body only if useful." }
+  ],
+  "github.copilot.chat.pullRequestDescriptionGeneration.instructions": [
+    { "text": "Bullet what changed and why, based only on the diff. Under 200 words. No fluff." }
   ],
 
+  "//_agent": "Agent mode / auto-approval. Keep autoApprove OFF and cap runs to avoid runaway token use. Flip specific tools to true only when you trust them.",
   "chat.tools.autoApprove": false,
   "chat.agent.maxRequests": 25,
+  "github.copilot.chat.agent.thinkingTool": true,
 
+  "//_completions": "Inline suggestions: enable broadly, disable where noise isn't helpful.",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+
+  "//_hygiene": "Smaller, consistent diffs = the model reads/rewrites less on every edit.",
   "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": { "source.organizeImports": "explicit" },
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
 
+  "//_noise": "Keep junk out of search/context so it never enters the model's window.",
   "search.exclude": {
     "**/node_modules": true,
     "**/dist": true,
-    "**/build": true
+    "**/build": true,
+    "**/.venv": true,
+    "**/coverage": true,
+    "**/*.lock": true
+  },
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/dist/**": true
   }
 }

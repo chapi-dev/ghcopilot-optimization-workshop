@@ -1,6 +1,10 @@
 {
-  "//": "Copy to: .github/mcp.json (or .vscode/mcp.json). REFERENCE ONLY — MCP is DISABLED for this workshop.",
-  "//_workshop": "Keep `servers` empty so nothing starts. See docs/09-mcp-optional.md before enabling anything.",
-  "//_example": "To enable later: { github: { type: http, url: https://api.githubcopilot.com/mcp/, headers: { Authorization: Bearer ${input:github_token} } } }",
+  "//_1": "TEMPLATE - Copy to .github/mcp.json (shared with the team) or .vscode/mcp.json (local). REFERENCE ONLY: MCP is DISABLED for this workshop. See docs/09-mcp-optional.md.",
+  "//_2": "Keep `servers` empty so nothing starts during the workshop.",
+  "//_3": "VS Code shape uses `servers` (each with type: 'http'|'stdio'|'sse'). The Copilot CLI uses `mcpServers` (see cli-mcp-config.template.json).",
+  "//_http_example": "{ github: { type: 'http', url: 'https://api.githubcopilot.com/mcp/', headers: { Authorization: 'Bearer ${input:github_token}' } } }",
+  "//_stdio_example": "{ azure: { type: 'stdio', command: 'npx', args: ['-y','@azure/mcp@latest','server','start'] } }",
+  "//_inputs": "Prefer ${input:...} prompts or environment variables for tokens; never hard-code secrets.",
+
   "servers": {}
 }

@@ -1,6 +1,9 @@
 {
-  "//": "Copy to: ~/.copilot/mcp-config.json. REFERENCE ONLY — MCP is DISABLED for this workshop.",
-  "//_workshop": "Leave mcpServers empty during the workshop. This block shows the shape you'd use later. See docs/09-mcp-optional.md.",
-  "//_example": "A server entry looks like: { command: npx, args: [-y, <server-package>], env: { API_KEY: ${input:api_key} } }",
+  "//_1": "TEMPLATE - reference for ~/.copilot/mcp-config.json. REFERENCE ONLY: MCP is DISABLED for this workshop (company policy). See docs/09-mcp-optional.md.",
+  "//_2": "Keep mcpServers EMPTY during the workshop so nothing starts. The examples below show the real shapes for when you enable MCP later.",
+  "//_3": "stdio example: { type: 'stdio', command: 'npx', args: ['-y','@azure/mcp@latest','server','start'], tools: ['*'], timeout: 120000, env: {} }",
+  "//_4": "http  example: { type: 'http', url: 'https://learn.microsoft.com/api/mcp', tools: ['*'] }",
+  "//_5": "Use tools:['*'] to allow all, or list specific tool names to reduce surface and token cost. Put secrets in env via ${input:...} / environment, never inline.",
+
   "mcpServers": {}
 }

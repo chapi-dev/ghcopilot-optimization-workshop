@@ -1,6 +1,21 @@
 {
-  "//": "Copy to: ~/.copilot/config.json (Windows: C:\\Users\\<you>\\.copilot\\config.json). Local Copilot CLI settings. Verify keys against the current CLI docs; unknown keys may be ignored.",
-  "//_note": "Keep this minimal. Personal, machine-local settings — do not commit to a repo.",
-  "banner": "never",
-  "theme": "auto"
+  "//_1": "TEMPLATE - reference for ~/.copilot/config.json (Windows: C:/Users/<you>/.copilot/config.json).",
+  "//_2": "IMPORTANT: config.json is MANAGED AUTOMATICALLY by the Copilot CLI. Do not hand-edit the caches/flights. Your editable USER settings belong in ~/.copilot/settings.json instead.",
+  "//_3": "The few fields below are the ones you may reasonably want to seed on a new machine. The CLI will add/refresh the rest itself.",
+
+  "//_lastUser": "Which host/account the CLI logs in as.",
+  "lastLoggedInUser": {
+    "host": "https://github.com",
+    "login": "<your-github-login>"
+  },
+
+  "//_trusted": "Folders the CLI treats as trusted (skips the trust prompt). Add absolute paths you work in. Keep this list tight for safety.",
+  "trustedFolders": [
+    "C:/Users/<you>/Documents/Projects/<repo>"
+  ],
+
+  "//_models": "Recently used model ids (the CLI maintains this; seeding is optional).",
+  "recentModelIds": [
+    "claude-opus-4.8"
+  ]
 }

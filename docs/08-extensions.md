@@ -1,7 +1,7 @@
 # 08 · Useful extensions
 
 Extensions extend Copilot Chat via `@participants` and `/commands`, or just make your editor
-produce cleaner, cheaper-to-process code. Here's what's worth trying — and how to add them.
+produce cleaner, cheaper-to-process code. Here's what's worth trying.
 
 > **No MCP required.** Everything here works without MCP servers.
 
@@ -15,7 +15,7 @@ the chat participant list.
 | **Caveman** | `@caveman` | A fun, ultra-terse "caveman speak" participant. Great demo of how a custom participant changes tone/among the shortest possible outputs. Good icebreaker for the workshop. |
 | Docs / framework participants | `@<name>` | Some libraries ship chat participants that answer with framework-specific knowledge. |
 
-### Try Caveman (workshop icebreaker)
+### Try Caveman (
 
 1. Marketplace → search **"Caveman"** → Install.
 2. In Chat, type `@caveman explain what a closure is`.

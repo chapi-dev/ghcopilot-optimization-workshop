@@ -4,7 +4,7 @@ Good prompting is mostly **context discipline**. The model can only be as good a
 it — and what you feed it costs tokens. This doc covers the reusable building blocks and the
 habits that make answers better *and* cheaper.
 
-## The building blocks (all reusable, all versioned)
+## The building blocks 
 
 | Block | File | What it's for | Scope |
 | --- | --- | --- | --- |
@@ -16,7 +16,7 @@ habits that make answers better *and* cheaper.
 
 > This repo ships an example of each. Open them and adapt them — that's the point.
 
-## Custom instructions: write rules, not essays
+## Custom instructions
 
 Good instructions are short, imperative, and testable. Example (already in this repo):
 

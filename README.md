@@ -42,6 +42,7 @@ This repo is designed to be:
 ```text
 .
 ├── README.md                      # You are here
+├── LICENSE                        # MIT
 ├── AGENTS.md                      # Agent guidance (works in VS Code, CLI & cloud agent)
 ├── .vscode/
 │   ├── extensions.json            # Recommended extensions for the workshop

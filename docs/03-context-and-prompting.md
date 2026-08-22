@@ -4,7 +4,7 @@ Good prompting is mostly **context discipline**. The model can only be as good a
 it — and what you feed it costs tokens. This doc covers the reusable building blocks and the
 habits that make answers better *and* cheaper.
 
-## The building blocks 
+## The building blocks
 
 | Block | File | What it's for | Scope |
 | --- | --- | --- | --- |

@@ -15,12 +15,14 @@ Background: [docs/03-context-and-prompting.md](../docs/03-context-and-prompting.
 ## Part B — Path-specific (7 pts)
 
 1. Create `.github/instructions/tests.instructions.md` with front matter:
+
    ```md
    ---
    applyTo: "**/*.test.*"
    ---
    - Use Arrange-Act-Assert. One behaviour per test. No snapshot tests.
    ```
+
 2. Open (or create) a `*.test.*` file and ask Copilot to add a test.
 3. Confirm the rule applied only for that file type.
 

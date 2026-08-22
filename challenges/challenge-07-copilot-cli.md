@@ -9,10 +9,12 @@ Background: [docs/07-copilot-cli.md](../docs/07-copilot-cli.md)
 ## Steps
 
 1. Install and launch:
+
    ```bash
    npm install -g @github/copilot
    copilot
    ```
+
 2. In a session opened at this repo, ask it something that should honour `AGENTS.md`
    (e.g. "summarize what this repo is") and confirm the answer respects the repo's rules
    (English, concise, no MCP).

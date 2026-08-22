@@ -15,15 +15,19 @@ Pick any PDF/DOCX you have (a spec, a README export, a slide deck). No sensitive
 ## Steps
 
 1. Convert it:
+
    ```bash
    markitdown "my-doc.pdf" -o "my-doc.md"
    ```
+
 2. **Trim** `my-doc.md`: delete headers/footers, page numbers, table of contents, and any
    sections unrelated to a question you want to ask.
 3. Compare sizes:
+
    ```powershell
    (Get-Item my-doc.pdf).Length; (Get-Content my-doc.md -Raw).Length
    ```
+
 4. Attach the trimmed `my-doc.md` (`#file:my-doc.md`) and ask a focused question with the
    **Concise** mode or `/token-diet`.
 

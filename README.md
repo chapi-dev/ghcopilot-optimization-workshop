@@ -21,7 +21,6 @@ This repo is designed to be:
 
 | I want to… | Go to |
 | --- | --- |
-| Present the opening talk (HTML slide deck) | [`presentation/index.html`](presentation/index.html) |
 | See the workshop plan (talk + hands-on) | [`docs/00-agenda.md`](docs/00-agenda.md) |
 | Set up my machine & VS Code | [`docs/01-setup.md`](docs/01-setup.md) |
 | Understand the 3 places you configure Copilot | [`docs/02-configuration-levels.md`](docs/02-configuration-levels.md) |
@@ -58,7 +57,6 @@ This repo is designed to be:
 │   │   └── copilot-setup-steps.yml# Env for the cloud coding agent
 │   └── mcp.json                   # MCP config (documented, disabled for the workshop)
 ├── docs/                          # The workshop content (read in order)
-├── presentation/                  # Opening talk — self-contained HTML slide deck
 ├── challenges/                    # Hands-on challenges + scoreboard
 └── templates/                     # Copy-paste, reusable config templates
 ```

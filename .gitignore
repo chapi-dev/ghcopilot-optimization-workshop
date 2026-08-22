@@ -20,3 +20,6 @@ __pycache__/
 
 # Copilot / agent local state (keep out of version control)
 .copilot/
+
+# Private presentation (not shared with the client repo)
+presentation/

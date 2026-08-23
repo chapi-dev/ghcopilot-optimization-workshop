@@ -1,12 +1,10 @@
 # GitHub Copilot Optimization Workshop
 
 A hands-on, reusable workshop repository for getting the most out of **GitHub Copilot**
-across the **whole product lifecycle** — not just writing code — while **spending as few
-tokens as possible**.
+across the **whole product lifecycle**
 
 This repo is designed to be:
 
-- **A talk companion** — a ~30 minute intro deck/notes, then hands-on.
 - **A hands-on lab** — driven from **Visual Studio Code** with challenges and points.
 - **A reusable template** — copy the `.github/`, `.vscode/`, and `templates/` folders into
   any repo to get an optimized Copilot setup out of the box.

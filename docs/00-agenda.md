@@ -4,14 +4,14 @@ Total: ~2 hours. **~30 min talk**, then **hands-on** in VS Code.
 
 ## Part 1 — Talk (~30 min)
 
-| Time | Topic | Notes |
-| --- | --- | --- |
-| 5 min | Why token optimization matters | Cost, latency, context limits, answer quality. |
-| 5 min | The 3 configuration levels | Local CLI · versioned repo · cloud coding agent — see [02](02-configuration-levels.md). |
-| 7 min | Custom instructions, prompt files, chat modes | The reusable building blocks — [03](03-context-and-prompting.md). |
-| 6 min | Token optimization playbook | Context scoping, PDF→MD, concise mode — [04](04-token-optimization.md). |
-| 4 min | Agent mode & auto mode | When to let it run, when to gate it — [05](05-agent-and-auto-mode.md). |
-| 3 min | Copilot across the lifecycle | Not just code — [06](06-lifecycle.md). |
+| Topic | Notes |
+|  --- | --- |
+| Why token optimization matters | Cost, latency, context limits, answer quality. |
+| The 3 configuration levels | Local CLI · versioned repo · cloud coding agent — see [02](02-configuration-levels.md). |
+| Custom instructions, prompt files, chat modes | The reusable building blocks — [03](03-context-and-prompting.md). |
+| Token optimization playbook | Context scoping, PDF→MD, concise mode — [04](04-token-optimization.md). |
+| Agent mode & auto mode | When to let it run, when to gate it — [05](05-agent-and-auto-mode.md). |
+| Copilot across the lifecycle | Not just code — [06](06-lifecycle.md). |
 
 > **MCP note:** We are **not** using MCP in this workshop (company policy). It's mentioned only
 > as future/optional material — [09](09-mcp-optional.md).
